@@ -7,6 +7,11 @@ body {
     font-weight: 800;
 }
 
+main {
+display: grid;
+grid-template-columns: auto;
+}
+
 /*HEADER*/
 header {
     display: flex;
@@ -62,16 +67,16 @@ li {
 /*END HEADER*/
 
 #flexible-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 0;
+    justify-items: center;
 }
 
 .row {
     display: flex;
-    width: 640px;
+    width: 100%;
     height: 515px;
 }
 
@@ -90,7 +95,7 @@ li {
 
 .row-bottom {
     display: flex;
-    width: 640px;
+    width: 100%;
     height: 257px;
 }
 
@@ -465,12 +470,6 @@ li {
     color: rgb(95, 85, 68);
 }
 
-.row-bottom {
-    display: flex;
-    width: 640px;
-    height: 257px;
-}
-
 .light-row .sport-description{
     color: rgb(95, 85, 68);
 }
@@ -484,7 +483,7 @@ li {
 }
 
 aside {
-    width: 1280px;
+    width: 100%;
     height: 480px;
     margin: 0 auto;
     text-align: center;
@@ -516,7 +515,7 @@ aside {
 }
 
 #schedule {
-    width: 1280px;
+    width: 100%;
     height: 924px;
     background-color: rgb(255, 233, 204);
     margin: 0 auto;
