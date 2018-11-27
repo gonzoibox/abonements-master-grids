@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.header-logo {
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(0, 17, 48);
+}
+
+nav {
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: -9%;
+    transform: scaleX(.92);
+    color: rgb(165, 174, 183);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.topnav a {
+    padding: 22px 0;
+}
+
+.topnav a:hover {
+    cursor: pointer;
+    border-bottom: 4px solid rgb(242, 191, 0);
+}
+
+.nav-menu li {
+    float: left;
+    margin-left: 48px;
+}
+
+.active {
+    height: 5px;
+    width: 77px;
+    margin-top: 20px;
+    background-color: rgb(249, 202, 1);
+}
+/*END HEADER*/
+
+#flexible-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    width: 640px;
+    height: 515px;
+}
+
+.left-col {
+    width: 69%;
+    padding-left: 94px;
+}
+
+.right-col {
+    width: 31%;
+}
+
+.left-col, .right-col {
+    display: inline-block;
+}
+
+.row-bottom {
+    display: flex;
+    width: 640px;
+    height: 257px;
+}
+
+.blue-card {
+    background-image: linear-gradient( rgb(42, 101, 158, 0.8), rgba(0, 0, 0, 0.5) ), url('./images/child-in-pool-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blue-card:hover {
+    background-color: rgb(42, 101, 158);
+    opacity: 0.55;
+    -webkit-transition: opacity,.6s;
+    -moz-transition: opacity,.6s;
+    transition: opacity,.6s;
+}
+
+.blue-card .card {
+    margin-left: -12px;
+}
+
+.blue-card .sport {
+    margin-left: -44px;
+    margin-top: 23px;
+    color: #fff;
+    font-size: 53px;
+    transform: scaleX(.79);
+}
+
+.blue-item {
+    height: 30px;
+    color: white;
+    padding: 7px 12px;
+    display: inline-block;
+    background-color: rgb(60, 86, 147);
+    border-radius: 7px;
+}
+
+.blue-card .sport-description {
+    font-size: 18px;
+    width: 260px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.buy {
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 59px;
+}
+
+.sport span {
+    margin-top: 40px;
+}
+.blue-card .buy > button {
+    background: linear-gradient(rgb(0, 166, 155), rgb(23, 111, 129));
+    width: 124px;
+    height: 49px;
+    position: relative;
+    border: 0mm;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 100;
+}
+
+.blue-card .buy > button::after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 38px;
+    top: 5px;
+    left: 95px;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgb(0, 166, 155), rgb(23, 111, 129));
+    transform: rotate(45deg);
+    border-radius: 10px;
+    z-index: -10;
+}
+
+#blue-price {
+    background-color: rgb(239, 171, 0);
+    width: 108px;
+    height: 33px;
+    border-radius: 6px;
+    margin-top: 335px;
+    margin-left: 31px;
+    padding-left: 7px;
+    font-size: 27px;
+}
+
+.lilu-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient( rgb(253, 0, 114, 0.8), rgba(0, 0, 0, 0.5) ), url('./images/beach-ball.jpg');
+}
+
+.lilu-card:hover {
+    background-color: rgb(253, 0, 114);
+    opacity: 0.55;
+    -webkit-transition: opacity,.6s;
+    -moz-transition: opacity,.6s;
+    transition: opacity,.6s;
+}
+
+.lilu-card .card {
+    margin-left: -26px;
+}
+
+.lilu-card .sport {
+    margin-left: -74px;
+    margin-top: 18px;
+    color: #fff;
+    font-size: 58px;
+    transform: scaleX(.77);
+}
+
+.lilu-item {
+    color: white;
+    padding: 5px 11px;
+    display: inline-block;
+    background-color: rgb(236, 0, 143);
+    border-radius: 5px;
+}
+
+.lilu-card .sport-description {
+    font-size: 18px;
+    width: 260px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 24px;
+    margin-left: -45px;
+    transform: scaleX(.86);
+}
+
+.lilu-card .buy > button {
+    background: linear-gradient(rgb(0, 166, 155), rgb(23, 111, 129));
+    width: 126px;
+    height: 50px;
+    position: relative;
+    border: 0mm;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 100;
+    margin-left: -10px;
+}
+
+.lilu-card .buy > button::after {
+    content: " ";
+    display: block;
+    width: 38px;
+    height: 38px;
+    top: 6px;
+    left: 100px;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgb(0, 166, 155), rgb(23, 111, 129));
+    transform: rotate(45deg);
+    border-radius: 7px;
+    z-index: -10;
+}
+
+#lilu-price {
+    background-color: rgb(239, 171, 0);
+    width: 108px;
+    height: 33px;
+    border-radius: 6px;
+    margin-top: 335px;
+    margin-left: 25px;
+    padding-left: 7px;
+    font-size: 27px;
+}
+
+.sea-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient( rgb(0, 75, 83, 0.8), rgba(0, 0, 0, 0.5) ), url('./images/swimmer-in-pool.jpg');
+}
+
+.sea-card:hover {
+    background-color: rgb(0, 75, 83);
+    opacity: 0.55;
+    -webkit-transition: opacity,.6s;
+    -moz-transition: opacity,.6s;
+    transition: opacity,.6s;
+}
+
+.sea-card .card {
+    margin-top: 32px;
+}
+
+.sea-card .sport {
+    margin-left: -51px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 42px;
+    transform: scaleX(.77);
+    width: max-content;
+}
+
+.sea-card .sport-description {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: -28px;
+    margin-top: 12px;
+    transform: scaleX(.86);
+}
+
+.sea-card .buy {
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.sea-item {
+    color: white;
+    padding: 5px 9px;
+    display: inline-block;
+    background-color: rgb(0, 110, 86);
+    border-radius: 8px;
+    margin-left: -9px;
+}
+
+.sea-card .buy > button {
+    background: linear-gradient(rgb(0, 166, 155), rgb(23, 111, 129));
+    width: 124px;
+    height: 49px;
+    position: relative;
+    border: 0mm;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 100;
+}
+
+.sea-card .buy > button::after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 38px;
+    top: 5px;
+    left: 95px;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgb(0, 166, 155), rgb(23, 111, 129));
+    transform: rotate(45deg);
+    border-radius: 10px;
+    z-index: -10;
+}
+
+#sea-price {
+    background-color: rgb(239, 171, 0);
+    width: 108px;
+    height: 33px;
+    border-radius: 6px;
+    margin-top: 119px;
+    margin-left: 27px;
+    padding-left: 7px;
+    font-size: 27px;
+}
+
+.light-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient( rgb(238, 215, 194, 0.8), rgba(0, 0, 0, 0.5) ), url('./images/aqua-joga.jpg');
+    color: rgb(95, 85, 68);
+}
+
+.light-card:hover {
+    background-color: rgb(238, 215, 194);
+    opacity: 0.55;
+    -webkit-transition: opacity,.6s;
+    -moz-transition: opacity,.6s;
+    transition: opacity,.6s;
+}
+
+.light-card .card {
+    margin-top: 32px;
+}
+
+.light-card .sport {
+    margin-left: -50px;
+    margin-top: 15px;
+    color: rgb(88, 90, 87);
+    font-size: 42px;
+    transform: scaleX(.82);
+    width: max-content;
+}
+
+.light-card .sport-description {
+    font-size: 17px;
+    color: rgb(88, 90, 87);
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: -56px;
+    margin-top: 10px;
+    transform: scaleX(.86);
+}
+.light-card .buy {
+    margin-top: 34px;
+    cursor: pointer;
+}
+
+.light-item {
+    color: rgb(93, 86, 82);
+    padding: 5px 12px;
+    display: inline-block;
+    background-color: rgb(255, 233, 204);
+    border-radius: 6px;
+    margin-left: -35px;
+}
+
+.light-card .buy > button {
+    background: linear-gradient(rgb(0, 166, 155), rgb(23, 111, 129));
+    width: 124px;
+    height: 49px;
+    position: relative;
+    border: 0mm;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 100;
+}
+
+.light-card .buy > button::after {
+    content: " ";
+    display: block;
+    width: 38px;
+    height: 38px;
+    top: 5px;
+    left: 98px;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgb(0, 166, 155), rgb(23, 111, 129));
+    transform: rotate(45deg);
+    border-radius: 8px;
+    z-index: -10;
+}
+
+#light-price {
+    background-color: rgb(239, 171, 0);
+    width: 108px;
+    height: 33px;
+    border-radius: 6px;
+    margin-top: 119px;
+    margin-left: 36px;
+    padding-left: 7px;
+    font-size: 27px;
+}
+
+.lilu-item, .blue-item, .sea-item, .light-item {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.light-row .sport {
+    color: rgb(95, 85, 68);
+}
+
+.row-bottom {
+    display: flex;
+    width: 640px;
+    height: 257px;
+}
+
+.light-row .sport-description{
+    color: rgb(95, 85, 68);
+}
+
+.light-card .left-col {
+    width: 67%;
+}
+
+.light-card .right-col {
+    width: 33%;
+}
+
+aside {
+    width: 1280px;
+    height: 480px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(0, 127, 160);
+    color: #fff;
+}
+
+.additional-info {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 69px;
+}
+
+.additional-info p {
+    font-size: 30px;
+    font-weight: 500;
+    transform: scaleX(.79);
+}   
+
+.additional-info h1 {
+    font-size: 39px;
+    margin: -5px 0;
+    transform: scaleX(.88);
+}
+
+.additional-info .additional-description {
+    font-size: 21px;
+    margin-top: 33px;
+}
+
+#schedule {
+    width: 1280px;
+    height: 924px;
+    background-color: rgb(255, 233, 204);
+    margin: 0 auto;
+}
+
+#schedule .title {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 36px;
+    margin-top: 0;
+    font-weight: 500;
+    height: 112px;
+}
+
+.learn-more {
+    text-align: center;
+    margin-top: 33px;
+}
+
+.learn-more > button {
+    background: linear-gradient(rgb(0, 175, 184), rgb(23, 117, 155));
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2), 0 4px 3px 0 rgba(0,0,0,0.3);
+    font-weight: 800;
+}
+
+.schedule-banner, .schedule-net, .time {
+    display: inline-flex;
+}
+
+.flex-cells {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-cells > div {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.flex-cells .cell div {
+    background-color: #f1f1f1;
+    width: 69px;
+    height: 61px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 13px;
+    justify-content: center;
+}
+
